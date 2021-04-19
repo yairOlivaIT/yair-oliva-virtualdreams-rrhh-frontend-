@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contactenos Virtual Dreams</title>
+</head>
+<body>
+    <header class="background-header">
+        <nav class="navbar navbar-expand-lg border-0 p-4">
+            <div class="container-fluid justify-content-lg-center container-width ">
+                <a class="navbar-brand nombre-empresa" href="#">Virtual Dreams</a>
+                <button class="navbar-toggler border border-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg class="w-6 h-6 text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    </span>
+                  </button>
+              <div class="collapse navbar-collapse p-2" id="navbarNav">
+                <ul class="navbar-nav w-100 m-0 justify-content-around">
+                    <li class="nav-item">
+                      <a class="nav-link texto-enlace" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link texto-enlace" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link texto-enlace" href="#">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto-enlace" href="#">Búsquedas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link texto-enlace" href="#">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container p-5">
+        <div class="border border-1 m-auto pb-5 container-formulario">
+            <div class="form">
+                <h2>Contáctenos.</h2>
+                <p>Contáctenos sobre cualquier cosa relacionada con nuestra empresa o nuestro servicios.<br>
+                    Haremos todo lo posible por darle respuesta a la brevedad.
+                </p>
+            </div>
+            <form class="form" id="formulario" action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control mb-2" id="nombre" name="nombre">
+                    <small></small>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control mb-2" id="email" name="email" aria-describedby="emailHelp">
+                    <small></small>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" class="form-control mb-2" id="asunto" name="asunto">
+                    <small></small>
+                </div>
+                <div class="form-group mb-5 mt-4">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="text" class="form-control mb-2" id="mensaje" rows="5" name="mensaje"></textarea>
+                    <small></small>
+                </div>
+                <button type="submit" class="btn btn-block w-75 submit" id="submit" data-toggle="modal" data-target="#exampleModal">Enviar</button>
+            </form>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h3 class="text-center p-4">El mensaje se envió correctamente</h3> 
+                    <svg class="w-25 h-25 text-info pb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    
+
+      <footer class="d-flex flex-row w-100 footer">
+          <div class="w-100 text-center pt-4">
+            <p>Términos y Condiciones</p>
+          </div>
+
+          <div class="w-100 text-center pt-4">
+            <p>&copy; 2021 - Virtual Dreams</p>
+          </div>
+      </footer>
+
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('../fonts/NotoSansJP-Regular.otf');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.background-header {
+    background-color: #0062FF ;
+}
+
+.container-width{
+    width: 80%;
+}
+
+.nombre-empresa{
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 11rem;
+    font-size: 18px;
+}
+
+.nombre-empresa:hover{
+    color: #000000;
+}
+.texto-enlace{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.texto-enlace:hover{
+    color: #000000;
+}
+
+.container-formulario{
+    width:  60%;
+    border-radius: 15px;
+}
+
+.form{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    color: #212121;
+}
+
+.form p{
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.submit{
+    background-color: #212121;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-transform: none;
+    font-size: 14px;
+    padding: 5px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: .5rem;
+}
+
+.submit:hover{
+    background-color: #3f3f3f;
+    color: #FFFFFF;
+}
+
+.error{
+    color: #FF0000;
+    font-size: 13px;
+}
+
+.footer{
+    margin-top: 1rem;
+    border-top: 4px solid #d3d3d3;
+    color: #212121;
+}
+
+@media (max-width: 768px){
+    .container-width{
+        width: 100%;
+    }
+
+    .container-formulario{
+        width: 100%;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+}
+
