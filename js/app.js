@@ -28,7 +28,7 @@ function validarFormulario(e){
         return;
     }
     else if(!expresiones.nombre.test(nombreValue)) {
-        imprimirAlerta(nombre, 'Solo se acepta minuscula , mayuscula y acentos.');
+        imprimirAlerta(nombre, 'Solo se acepta minúscula , mayúscula y acentos.');
         return;
     }
     
